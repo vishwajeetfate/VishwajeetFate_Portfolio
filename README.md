@@ -1,4 +1,3 @@
-Vishwajeet Fate
 Welcome to my GitHub portfolio! I’m a passionate and detail-oriented Game Designer specializing in game mechanics, level design, and narrative structure. With experience in Unity (2D/3D), C# scripting, and game development, I focus on creating immersive experiences and player-centric gameplay.
 
 Currently pursuing a B.Tech in Gaming Technology, I am constantly expanding my skills and exploring new game development techniques.
