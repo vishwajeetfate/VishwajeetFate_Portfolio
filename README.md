@@ -1,18 +1,38 @@
-Welcome to my GitHub portfolio! I’m a passionate and detail-oriented Game Designer specializing in game mechanics, level design, and narrative structure. With experience in Unity (2D/3D), C# scripting, and game development, I focus on creating immersive experiences and player-centric gameplay.
+# 👋 Welcome to My GitHub Portfolio
 
-Currently pursuing a B.Tech in Gaming Technology, I am constantly expanding my skills and exploring new game development techniques.
+Hi! I'm **Vishwajeet Fate**, a passionate and detail-oriented **Game Designer** with a strong focus on game mechanics, level design, and narrative structure. I specialize in creating immersive experiences and player-centric gameplay using Unity (2D/3D), C# scripting, and various game development tools.
 
-Skills:
-Game Design & Development: Unity 2D/3D, Unreal Engine, Photon Unity Networking
-Programming: C#, C++, Java, Python, JavaScript
-Design Tools: Blender, Adobe Illustrator, Photoshop, Figma, Canva
-Projects:
-Riptide Rescue: Educational web game using HTML, CSS, and JavaScript.
-Capsule Strike: 3D multiplayer FPS with Photon Unity Networking.
-Jumping Cube: A hyper-casual jumping game under development.
-Stack Ball 3D: 3D puzzle game available on itch.io.
-Feel free to explore my projects and reach out for collaborations or feedback. Let’s create something amazing!
+🎓 Currently pursuing a **B.Tech in Gaming Technology**, I'm constantly learning and experimenting with new game design and development techniques.
 
-Contact:
-📧 Email: vishwajeetfate@gmail.com
-🔗 LinkedIn: Vishwajeet Fate
+---
+
+## 🚀 Skills
+
+**Game Design & Development**  
+- Unity 2D/3D  
+- Unreal Engine  
+- Photon Unity Networking
+
+**Programming Languages**  
+- C#  
+- C++  
+- Java  
+- Python  
+- JavaScript
+
+**Design Tools**  
+- Blender  
+- Adobe Illustrator  
+- Photoshop  
+- Figma  
+- Canva
+
+---
+
+## 🤝 Let's Connect!
+
+📧 **Email:** [vishwajeetfate@gmail.com](mailto:vishwajeetfate@gmail.com)  
+🔗 **LinkedIn:** [Vishwajeet Fate](https://www.linkedin.com/in/vishwajeetfate)
+
+Feel free to explore my repositories, check out my projects, or reach out for collaborations and feedback.  
+**Let’s create something amazing! 🎮**
