@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Games | Vishwajeet Fate</title>
+
+ <link rel="stylesheet" href="../CSS/projectPage.css" />
+  <!-- FontAwesome CDN link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="stars"></div>
+  <div class="crazy-blobs"></div>
+
+  <header>
+    <div class="header-container">
+      <div class="glitch" data-text="Game Projects">Game Projects</div>
+      <a href="../index.html#categories" class="back-btn"> Back to Home</a>
+    </div>
+  </header>
+
+  
+
+    <section class="projects">
+         <!-- ✅ Full Games -->
+          <h2 class="section-heading">Full Games</h2>
+          <br>
+
+            <!-- The Withering World -->
+            <article class="project-item" onclick="openModal('modal9')">
+              <img src="../Images/Project_Images/Games/The Withering World_Civilization’s Cost/LOGO.png" alt="The Withering World Logo" />
+              <h3>The Withering World</h3>
+              <p>Narrative-Driven Environmental Simulation</p>
+              <a href="#">Learn More</a>
+            </article>
+
+            <!-- Fragile Flight -->
+            <article class="project-item" onclick="openModal('modal10')">
+              <img src="../Images/Project_Images/Games/Fragile_Flight/Fragile_Flight.jpg" alt="Fragile Flight Logo" />
+              <h3>Fragile Flight</h3>
+              <p>Physics-Based 3D Side-Scrolling Adventure</p>
+              <a href="#">Learn More</a>
+            </article>
+
+            <!-- Zombie Rush -->
+            <article class="project-item" onclick="openModal('modal8')">
+              <img src="../Images/Project_Images/Games/ZombieRush/LOGO.jpg" alt="Zombie Rush Logo" />
+              <h3>Zombie Rush</h3>
+              <p>Fast-Paced Top-Down Zombie Shooter</p>
+              <a href="#">Learn More</a>
+            </article>
+
+            <!-- Stack Ball 3D Clone -->
+            <article class="project-item" onclick="openModal('modal1')">
+              <img src="../Images/Project_Images/Games/StackBall/LOGO.jpg" alt="Stack Ball 3D Logo" />
+              <h3>Stack Ball 3D Clone</h3>
+              <p>Hyper-Casual Game</p>
+              <a href="#">Learn More</a>
+            </article>
+
+            <!-- Jumping Cube -->
+            <article class="project-item" onclick="openModal('modal2')">
+              <img src="../Images/Project_Images/Games/JumpingCube/LOGO.png" alt="Jumping Cube Logo" />
+              <h3>Jumping Cube</h3>
+              <p>Hyper-Casual Game</p>
+              <a href="#">Learn More</a>
+            </article>
+
+            <!-- Temple of Memories -->
+            <article class="project-item" onclick="openModal('modal3')">
+              <img src="../Images/Project_Images/Games/TempleOfMemories/LOGO.png" alt="Temple of Memories Logo" />
+              <h3>Temple of Memories</h3>
+              <p>Story-Based Puzzle Game</p>
+              <a href="#">Learn More</a>
+            </article>
+
+            <!-- Capsule Strike -->
+            <article class="project-item" onclick="openModal('modal5')">
+              <img src="../Images/Project_Images/Games/CapsuleStrike/LOGO.png" alt="Capsule Strike Logo" />
+              <h3>Capsule Strike</h3>
+              <p>3D Multiplayer FPS</p>
+              <a href="#">Learn More</a>
+            </article>
+
+            <!-- Riptide Rescue -->
+            <article class="project-item" onclick="openModal('modal13')">
+              <img src="../Images/Project_Images/Games/RiptideRescue/LOGO.png" alt="Riptide Rescue Logo" />
+              <h3>Riptide Rescue</h3>
+              <p>Educational Game on Safety & Cleanliness</p>
+              <a href="#">Learn More</a>
+            </article>
+
+           <!-- 🧪 Prototypes / In Development -->
+            <br>
+          <h2 class="section-heading">Prototypes / In Development</h2>
+
+          <!-- Basketball Mechanics 2D -->
+          <article class="project-item" onclick="openModal('modal6')" aria-label="Open Basketball Mechanics 2D modal">
+            <img src="../Images/Project_Images/Games/BasketBall 2d/LOGO.png" alt="Basketball Mechanics 2D" />
+            <h3>Basketball Mechanics 2D</h3>
+            <p>Test out basketball mechanics in a simple 2D environment.</p>
+            <a href="link-to-project-details-page" target="_blank" rel="noopener noreferrer">Learn More</a>
+          </article>
+
+          <!-- Basketball Mechanics 3D -->
+          <article class="project-item" onclick="openModal('modal7')">
+            <img src="../Images/Project_Images/Games/Basket Ball 3d/logo.jpg" alt="Basketball Mechanics 3D" />
+            <h3>Basketball Mechanics 3D</h3>
+            <p>Experience realistic 3D basketball shooting mechanics.</p>
+            <a href="#">Learn More</a>
+          </article>
+
+          <!-- Gravity Manipulation -->
+          <article class="project-item" onclick="openModal('modal11')">
+            <img src="../Images/Project_Images/Games/Gravity Manipulation/LOGO.png" alt="Gravity Manipulation" />
+            <h3>Gravity Manipulation</h3>
+            <p>Manipulate gravity to solve puzzles and create innovative game mechanics.</p>
+            <a href="#">Learn More</a>
+          </article>
+
+          <!-- Chess Moves Calculator -->
+          <article class="project-item" onclick="openModal('modal4')">
+            <img src="../Images/Project_Images/Games/Chess Moves Calculator/LOGo.png" alt="Chess Moves Calculator" />
+            <h3>Chess Moves Calculator</h3>
+            <p>Chess tool for visualizing valid moves and enemy captures.</p>
+            <a href="#">Learn More</a>
+          </article>
+
+    </section>
+
+
+
+<!-- Modals for each project -->
+
+    <!-- Modal for Stack Ball 3D -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Stack Ball 3D – Clone</h2>
+        <p>
+          Take control of a bouncing ball in <strong>Stack Ball 3D</strong>, a hyper-casual, fast-paced game that will test your reflexes and timing. Break through colorful layers while avoiding black obstacles in this addictive arcade experience.
+        </p>
+
+        <h3>🎮 Controls</h3>
+        <ul>
+          <li><strong>PC:</strong> Mouse click</li>
+          <li><strong>Mobile:</strong> Tap</li>
+
+        </ul>
+
+        <h3>🚀 Features</h3>
+        <ul>
+          <li>Exciting and addictive gameplay with simple controls</li>
+          <li>Colorful stacked layers to break through</li>
+          <li>Fast-paced action with increasing difficulty</li>
+        </ul>
+
+        <p><strong>⚡ How Deep Can You Go?</strong> Bounce your way through layers and try to reach the deepest point possible to achieve the highest score!</p>
+
+        <!-- Links for GitHub, Itch.io, and LinkedIn with icons -->
+        <div class="social-links">
+          <h3>Links</h3>
+          <a href="../404.html" target="_blank" title="Itch.io">
+            <i class="fab fa-itch-io"></i>
+          </a>
+          <a href="../404.html" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+
+
+        <!-- Game Gallery -->
+        <h3>📸 Game Gallery</h3>
+        <div class="media-grid">
+          <div class="carousel">
+            <button class="prev" onclick="prevSlide('carousel1')">&#10094;</button>
+            <div class="carousel-track" id="carousel1">
+              <img src="../Images/Project_Images/Games/StackBall/1.png" alt="Stack Ball 3D Gameplay 1" />
+              <img src="../Images/Project_Images/Games/StackBall/2.png" alt="Stack Ball 3D Gameplay 2" />
+              <img src="../Images/Project_Images/Games/StackBall/3.png" alt="Stack Ball 3D Gameplay 3" />
+              <img src="../Images/Project_Images/Games/StackBall/4.png" alt="Stack Ball 3D Gameplay 4" />
+            </div>
+            <button class="next" onclick="nextSlide('carousel1')">&#10095;</button>
+          </div>
+
+          <!-- Embed YouTube video -->
+          <div class="video-full">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/M68RFRgSAGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal for Jumping Cube -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Jumping Cube – A High-Flying Platformer Adventure!</h2>
+        <p>
+          Take control of a jumping cube in <strong>Jumping Cube</strong>, a thrilling 2D platformer where quick reflexes and precision are key! Leap across tiles, dodge obstacles, and climb the leaderboard in this endless runner adventure.
+        </p>
+
+        <h3>🎯 Your Mission</h3>
+        <p>
+          Jump from tile to tile, avoid pitfalls, and land successfully to earn points. The further you go, the harder the jumps become, so stay sharp!
+        </p>
+
+        <p><strong>🏆 How High Can You Jump?</strong> Test your skills, unlock new skins, and dominate the leaderboard!</p>
+
+        <!-- Social Links Section -->
+        <div class="social-links">
+          <h3>Check Out the Project</h3>
+          <!-- Itch.io Link -->
+          <a href="../404.html" target="_blank" title="Play Jumping Cube on Itch.io">
+            <i class="fab fa-itch-io"></i>
+          </a>
+        
+          <!-- LinkedIn Link -->
+          <a href="../404.html" target="_blank" title="LinkedIn Profile">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+
+        <!-- Media Gallery -->
+        <h3>📸 Gallery</h3>
+        <div class="media-grid">
+          <div class="carousel">
+            <button class="prev" onclick="prevSlide('carousel2')">&#10094;</button>
+            <div class="carousel-track" id="carousel2">
+              <img src="../Images/Project_Images/Games/JumpingCube/1.png" alt="Jumping Cube Preview 1" />
+              <img src="../Images/Project_Images/Games/JumpingCube/2.png" alt="Jumping Cube Preview 2" />
+              <img src="../Images/Project_Images/Games/JumpingCube/3.png" alt="Jumping Cube Preview 3" />
+              <img src="../Images/Project_Images/Games/JumpingCube/4.png" alt="Jumping Cube Preview 4" />
+              <img src="../Images/Project_Images/Games/JumpingCube/5.png" alt="Jumping Cube Preview 5" />
+              <img src="../Images/Project_Images/Games/JumpingCube/6.png" alt="Jumping Cube Preview 6" />
+              <img src="../Images/Project_Images/Games/JumpingCube/7.png" alt="Jumping Cube Preview 7" />
+            </div>
+            <button class="next" onclick="nextSlide('carousel2')">&#10095;</button>
+          </div>
+
+          <!-- Embed YouTube video -->
+          <div class="video-full">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JTLLazSw6uU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Modal for Temple of Memories -->
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Temple of Memories</h2>
+        <p><strong>Ranked #7</strong> in the Game Jam event.</p>
+
+        <p>
+          Developed in under 48 hours during the IGDC Game Connect Kolkata Game Jam (in collaboration with Red Apple Learning and the Scope Gaming Community), 
+          <strong>Temple of Memories</strong> is a story-driven 3D platformer created using Unity.
+        </p>
+
+        <p>
+          The game explores three intertwined themes:
+          <ul>
+            <li>🔹 Forget Me Not</li>
+            <li>🔹 Time Travel / Reversal</li>
+            <li>🔹 Upside Down</li>
+          </ul>
+        </p>
+
+        <p>
+          Lead by <strong>Vishwajeet Fate</strong>, the team included <strong>Shivam Kumar</strong>, <strong>Aarush Shrivastava</strong>, and <strong>Suyash Rane</strong>. Together, they designed a puzzle-focused experience that challenges players with gravity-inverting traps and time-based mechanics.
+        </p>
+
+        <p>
+          Players must revisit the past to uncover memory patterns and solve environmental puzzles that restore a forgotten temple. Precision platforming, shifting perspectives, and narrative fragments await in this fast-paced jam project.
+        </p>
+
+        <!-- Social Links Section -->
+        <div class="social-links">
+          <h3>Check Out the Project</h3>
+          <!-- Itch.io Link -->
+          <a href="https://vishwajeetfate.itch.io/temple-of-memories" target="_blank" title="Play Temple of Memories on Itch.io">
+            <i class="fab fa-itch-io"></i>
+          </a>
+          
+          <!-- LinkedIn Link -->
+          <a href="https://www.linkedin.com/posts/vishwajeetfate_temple-of-memories-activity-7223380567466102784-czHo?utm_source=share&utm_medium=member_desktop&rcm=ACoAADe9rwkBS86M8xHVEw8avbJ52GpszH4Bdaw" target="_blank" title="LinkedIn Profile">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+
+        <h3>📸 Gallery</h3>
+        <div class="carousel">
+          <button class="prev" onclick="prevSlide('carousel3')">&#10094;</button>
+          <div class="carousel-track" id="carousel3">
+            <img src="../Images/Project_Images/Games/TempleOfMemories/1.png" alt="Temple of Memories Preview 1" />
+            <img src="../Images/Project_Images/Games/TempleOfMemories/2.png" alt="Temple of Memories Preview 2" />
+            <img src="../Images/Project_Images/Games/TempleOfMemories/3.png" alt="Temple of Memories Preview 3" />
+            <img src="../Images/Project_Images/Games/TempleOfMemories/4.png" alt="Temple of Memories Preview 4" />
+            <img src="../Images/Project_Images/Games/TempleOfMemories/5.png" alt="Temple of Memories Preview 5" />
+            <img src="../Images/Project_Images/Games/TempleOfMemories/6.png" alt="Temple of Memories Preview 6" />           
+          </div>
+          <button class="next" onclick="nextSlide('carousel3')">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Capsule Strike -->
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <h2>Capsule Strike</h2>
+        <p>🚀 Capsule Strike is now live! 🎮✨</p>
+        <p>Capsule Strike is a fast-paced 3D multiplayer FPS where you control capsule-shaped characters in vibrant, low-poly maps. Enjoy 2-minute matches filled with action, strategy, and power-ups!</p>
+
+        <ul>
+          <li>🔹 Quick, 2-minute matches</li>
+          <li>🔹 Unique low-poly graphics</li>
+          <li>🔹 Tactical gameplay with power-ups</li>
+        </ul>
+
+      <!-- Social Links Section -->
+      <div class="social-links">
+        <h3>Check Out the Project</h3>
+        <a href="https://vishwajeetfate.itch.io/capsule-strike" target="_blank" title="Itch.io">
+          <i class="fab fa-itch-io"></i>
+        </a>
+        <a href="https://www.linkedin.com/posts/vishwajeetfate_gamedevelopment-indiegame-fps-activity-7229541493173022720-_rvu?utm_source=share&utm_medium=member_desktop&rcm=ACoAADe9rwkBS86M8xHVEw8avbJ52GpszH4Bdaw" target="_blank" title="LinkedIn Profile">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+        <h3>📸 Gallery</h3>
+        <div class="carousel">
+          <button class="prev" onclick="prevSlide('carousel5')">&#10094;</button>
+          <div class="carousel-track" id="carousel5">
+            <img src="../Images/Project_Images/Games/CapsuleStrike/1.png" alt="Capsule Strike Screenshot 1" />
+            <img src="../Images/Project_Images/Games/CapsuleStrike/2.png" alt="Capsule Strike Screenshot 2" />
+            <img src="../Images/Project_Images/Games/CapsuleStrike/3.png" alt="Capsule Strike Screenshot 3" />
+            <img src="../Images/Project_Images/Games/CapsuleStrike/4.png" alt="Capsule Strike Screenshot 4" />
+            <img src="../Images/Project_Images/Games/CapsuleStrike/5.png" alt="Capsule Strike Screenshot 5" />
+            <img src="../Images/Project_Images/Games/CapsuleStrike/6.png" alt="Capsule Strike Screenshot 6" />
+            <img src="../Images/Project_Images/Games/CapsuleStrike/7.png" alt="Capsule Strike Screenshot 7" />
+            <img src="../Images/Project_Images/Games/CapsuleStrike/8.png" alt="Capsule Strike Screenshot 8" />              
+          </div>
+          <button class="next" onclick="nextSlide('carousel5')">&#10095;</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal for Zombie Rush -->
+    <div id="modal8" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal8')">&times;</span>
+        <h2>🧟 Zombie Rush – Survive the Onslaught!</h2>
+        <p>
+          <strong>Zombie Rush</strong> is a top-down, fast-paced shooter where players fend off relentless waves of the undead. Unlock new weapons, grab power-ups, and fight your way through escalating levels of chaos.
+        </p>
+
+        <!-- Internship Project Overview -->
+        <h3>💼 Internship Project at Jabsz Gaming Studio</h3>
+        <p>
+          Zombie Rush was developed during my internship at <strong>Jabsz Gaming Studio</strong>, a fast-paced game development company. It is a shooter game designed for mobile platforms, offering a thrilling experience with intuitive controls and various weapon upgrades. Players face increasingly difficult waves of zombies, earning power-ups, and unlocking stronger weapons as they progress through the levels. The game is available on the <strong>Google Play Store</strong>.
+        </p>
+
+        <h3>🎮 Game Features</h3>
+        <ul>
+          <li><strong>Combat Mechanics:</strong> Intuitive touch-based controls and fluid shooting.</li>
+          <li><strong>Wave System:</strong> Survive increasingly difficult zombie waves with varied enemy types.</li>
+          <li><strong>Power-Ups:</strong> Temporary boosts like invincibility, speed, and double damage.</li>
+          <li><strong>Weapon Unlocks:</strong> Earn and equip stronger weapons as you progress.</li>
+        </ul>
+
+        <h3>🧱 Platform</h3>
+        <p>Available now on <strong>Google Play Store</strong>.</p>
+
+        <h3>📦 Game Info</h3>
+        <ul>
+          <li><strong>Mode:</strong> Single Player</li>
+          <li><strong>Genre:</strong> Shooter</li>
+          <li><strong>Status:</strong> Out Now</li>
+        </ul>
+
+        <!-- Social Links Section -->
+        <div class="social-links">
+          <h3>Check Out the Project</h3>
+          <!-- Play Store Link -->
+          <a href="https://play.google.com/store/apps/details?id=com.JabszGamingStudios.ZombieRush" target="_blank" title="Download on Google Play">
+            <i class="fab fa-google-play"></i>
+          </a>
+          <!-- Website Link -->
+          <a href="https://www.jabszgamingstudios.com/" target="_blank" title="Official Website">
+            <i class="fas fa-globe"></i>
+          </a>
+        </div>
+
+        <h3>📸 Gallery</h3>
+        <div class="carousel">
+          <button class="prev" onclick="prevSlide('carousel8')">&#10094;</button>
+          <div class="carousel-track" id="carousel8">
+            <img src="../Images/Project_Images/Games/ZombieRush/1.png" alt="Zombie Rush Screenshot 1" />
+            <img src="../Images/Project_Images/Games/ZombieRush/2.png" alt="Zombie Rush Screenshot 2" />
+            <img src="../Images/Project_Images/Games/ZombieRush/3.png" alt="Zombie Rush Screenshot 3" />
+            <img src="../Images/Project_Images/Games/ZombieRush/4.png" alt="Zombie Rush Screenshot 4" />
+            <img src="../Images/Project_Images/Games/ZombieRush/5.png" alt="Zombie Rush Screenshot 5" />
+            <img src="../Images/Project_Images/Games/ZombieRush/city.png" alt="Zombie Rush City Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/city2.png" alt="Zombie Rush City 2 Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/citylong.png" alt="Zombie Rush City Long Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/Desert.png" alt="Zombie Rush Desert Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/Desert 1.png" alt="Zombie Rush Desert 1 Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/DryForest.png" alt="Zombie Rush Dry Forest Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/Full City 1.png" alt="Zombie Rush Full City 1 Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/Full city 2.png" alt="Zombie Rush Full City 2 Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/GreenForest.png" alt="Zombie Rush Green Forest Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/Header.png" alt="Zombie Rush Header Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/MainMenu.png" alt="Zombie Rush Main Menu Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/Map Menu.png" alt="Zombie Rush Map Menu Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/Map top View in site image.png" alt="Zombie Rush Map Top View Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/Progress.png" alt="Zombie Rush Progress Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/Stores.png" alt="Zombie Rush Stores Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/Temple.png" alt="Zombie Rush Temple Screenshot" />
+            <img src="../Images/Project_Images/Games/ZombieRush/Temple I.png" alt="Zombie Rush Temple I Screenshot" />
+          </div>
+          <button class="next" onclick="nextSlide('carousel8')">&#10095;</button>
+        </div>
+
+        <div class="media-grid">
+          <div class="video-full">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VKekxUgn1f0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal for The Withering World -->
+    <div id="modal9" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal9')">&times;</span>
+        <h2>The Withering World: Civilization's Cost</h2>
+        <p>
+          <strong>The Withering World</strong> is a story-driven environmental simulation game where players embody vulnerable wildlife navigating a human-altered world. It blends emotion, education, and gameplay to highlight deforestation, pollution, and climate change.
+        </p>
+
+        <!-- Capstone Project Overview -->
+        <h3>🎮 Capstone Project Overview</h3>
+        <p>
+          The Withering World is a simulation game developed as part of my capstone project, targeting players aged 13 and above. This game aims to immerse players in the lives of animals struggling to survive amid human expansion and environmental destruction. Through interactive storytelling and gameplay, the game promotes awareness about deforestation, pollution, and the urgency for climate action.
+        </p>
+        <p>
+          By stepping into the paws, wings, and fins of animals like rabbits, birds, and marine creatures, players experience the devastating effects of human activities, bringing attention to environmental issues that are often overlooked in mainstream media. The game challenges players to reflect on their personal impact on the planet and inspires them to take action toward conservation.
+        </p>
+
+        <h3>🌍 Game Concept</h3>
+        <ul>
+          <li>Control animals like rabbits and birds struggling to survive in changing habitats.</li>
+          <li>Levels inspired by real-world events</li>
+          <li>Emotional cutscenes tied to environmental storytelling.</li>
+        </ul>
+
+        <h3>🎮 Gameplay Mechanics</h3>
+        <ul>
+          <li><strong>Rabbit:</strong> Hide, dig burrows, and evade predators in a deforested forest.</li>
+          <li><strong>Bird:</strong> Migrate through polluted skies, avoiding obstacles and managing stamina.</li>
+          <li>Interactive facts and lore unlocks to educate as players progress.</li>
+        </ul>
+
+        <h3>📘 Educational Features</h3>
+        <ul>
+          <li>Integrated environmental facts from WWF, FAO, and IPBES.</li>
+          <li>Emotional storytelling designed to foster empathy and eco-consciousness.</li>
+          <li>Prototype built using Unity with low-poly, stylized visuals and dynamic audio.</li>
+        </ul>
+
+        <p><strong>🌱 Will You Make a Difference?</strong> Step into the wild and experience the consequences of human impact through the eyes of those most affected.</p>
+
+        <!-- PDF download -->
+        <p>
+          📄 <a href="/Images/Project_Images/Games/The Withering World_Civilization’s Cost/IEEE Reserch Paper Withering World.pdf" target="_blank" rel="noopener" class="paper">
+          Download Research Paper (PDF)</a>
+        </p>
+
+        <!-- Media Gallery -->
+        <h3>📸 Gallery</h3>
+        <div class="media-grid">
+          <div class="carousel">
+            <button class="prev" onclick="prevSlide('carousel9')">&#10094;</button>
+            <div class="carousel-track" id="carousel9">
+              <img src="../Images/Project_Images/Games/The Withering World_Civilization’s Cost/Screenshot 2025-04-20 111422.png" alt="The Withering World Screenshot 1" />
+              <img src="../Images/Project_Images/Games/The Withering World_Civilization’s Cost/Screenshot 2025-04-20 111508.png" alt="The Withering World Screenshot 2" />
+            </div>
+            <button class="next" onclick="nextSlide('carousel9')">&#10095;</button>
+          </div>
+
+          <!-- Embed YouTube video -->
+          <div class="video-full">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zt4u5lMJV9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- Why The Withering World Stands Out -->
+        <h3>💡 Why This Game Stands Out</h3>
+        <p>
+          Unlike other environmental games like <em>Endling – Extinction is Forever</em> or <em>Subnautica</em>, The Withering World grounds its narrative in the present-day environmental crises. It offers a more relatable and impactful portrayal of ecological issues, featuring multiple animal perspectives and a variety of environmental challenges. This approach provides players with a well-rounded understanding of topics such as deforestation, pollution, and climate change, encouraging empathy and inspiring real-world action for conservation.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Modal for Fragile Flight -->
+    <div id="modal10" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal10')">&times;</span>
+        <h2>Fragile Flight – A High-Stakes Drone Delivery Adventure!</h2>
+        <p>
+          Take control of a high-tech delivery drone in <strong>Fragile Flight</strong>, a physics-based 3D side-scrolling adventure where precision and care are everything! Navigate through bustling cityscapes filled with hazards—one wrong move, and your cargo is history.
+        </p>
+
+        <h3>🎯 Your Mission</h3>
+        <p>
+          Transport a fragile package through an environment packed with obstacles like power lines, birds, storms, and enemy drones.
+        </p>
+
+        <h3>🎮 Controls</h3>
+        <ul>
+          <li><strong>PC:</strong> W (Up), S (Down), A/D (Left/Right)</li>
+          <li><strong>Mobile:</strong> Swipe Up/Down/Left/Right</li>
+        </ul>
+
+        <h3>🚀 Features</h3>
+        <ul>
+          <li>Physics-driven drone movement (momentum, wind, gravity)</li>
+          <li>Low-poly, clean visual design</li>
+          <li>Dynamic hazards and enemy drones</li>
+          <li>Power-ups: shields, boosts, multipliers</li>
+          <li>Adaptive soundtrack for intensity</li>
+        </ul>
+
+        <h3>🛠 Prototype in Development</h3>
+        <p>
+          Fragile Flight is a 2-day prototype by a two-member team. Features and polish are actively in progress.
+        </p>
+        <p><strong>🛫 Are You Ready for Takeoff?</strong> Test your piloting skills, upgrade your drone, and prove you're the ultimate delivery pilot!</p>
+
+        <!-- Game Jam Details -->
+        <h3>🎮 Game Jam Information</h3>
+        <p>
+          <strong>Event:</strong> WAVES Game Jam 2024<br>
+          <strong>Theme:</strong> Handle with Care<br>
+          This game was created for the WAVES Game Jam 2024, with the theme "Handle with Care". The design and gameplay revolve around the core idea of carefully transporting fragile items through a dangerous environment.
+        </p>
+
+        <!-- Social Links Section -->
+        <div class="social-links">
+          <h3>Check Out the Project</h3>
+          <a href="https://knight070409.itch.io/fragile-flight" target="_blank" title="Itch.io">
+            <i class="fab fa-itch-io"></i> 
+          </a>
+        </div>
+
+        <h3>📸 Gallery</h3>
+        <div class="carousel">
+          <button class="prev" onclick="prevSlide('carousel10')">&#10094;</button>
+          <div class="carousel-track" id="carousel10">
+            <img src="../Images/Project_Images/Games/Fragile_Flight/1.png" alt="Fragile Flight Preview 1" />
+            <img src="../Images/Project_Images/Games/Fragile_Flight/2.png" alt="Fragile Flight Preview 2" />
+            <img src="../Images/Project_Images/Games/Fragile_Flight/3.png" alt="Fragile Flight Preview 3" />
+            <img src="../Images/Project_Images/Games/Fragile_Flight/4.png" alt="Fragile Flight Preview 4" />
+            <img src="../Images/Project_Images/Games/Fragile_Flight/5.png" alt="Fragile Flight Preview 5" />
+            <img src="../Images/Project_Images/Games/Fragile_Flight/6.png" alt="Fragile Flight Preview 6" />
+            <img src="../Images/Project_Images/Games/Fragile_Flight/7.png" alt="Fragile Flight Preview 7" />
+            <img src="../Images/Project_Images/Games/Fragile_Flight/8.png" alt="Fragile Flight Preview 8" />
+          </div>
+          <button class="next" onclick="nextSlide('carousel10')">&#10095;</button>
+        </div>
+
+        <!-- Embed YouTube video -->
+        <div class="video-full">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/X92sad2XKyU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal for Riptide Rescue -->
+    <div id="modal13" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal13')">&times;</span>
+        <h2>Riptide Rescue</h2>
+        <p><strong>Ranked #1</strong> in the Game Jam event.</p>
+
+        <p>
+          <strong>Riptide Rescue</strong> is an impactful and educational browser game created as part of a college project.
+          Developed using HTML, CSS, and JavaScript, it incorporates custom graphics designed in Adobe Illustrator.
+        </p>
+        <p>
+          The game promotes awareness around <strong>drowning prevention</strong> and supports the <strong>Swachh Bharat</strong> initiative,
+          blending gameplay with social responsibility.
+        </p>
+        <h3>📸 <strong>Features:</strong></h3>
+        <ul>
+          <li>🎮 Built with HTML, CSS, and JavaScript</li>
+          <li>🎨 Original artwork using Adobe Illustrator</li>
+          <li>📹 Integrated webcam for interactive elements</li>
+          <li>🌍 Focused on safety education and cleanliness</li>
+          <li>👏 Well-received during a campus gaming event</li>
+        </ul>
+
+        <p>This project demonstrates a blend of technical skill, creativity, and purpose-driven design.</p>
+
+        <!-- Social Links Section -->
+        <div class="social-links">
+          <h3>Check Out the Project</h3>
+          <a href="https://shivam5411.itch.io/riptide-rescue-3" target="_blank" title="Itch.io">
+            <i class="fab fa-itch-io"></i>
+          </a>
+        </div>
+
+        <h3>📸 Gallery</h3>
+        <div class="carousel">
+          <button class="prev" onclick="prevSlide('carousel13')">&#10094;</button>
+          <div class="carousel-track" id="carousel13">
+            <img src="../Images/Project_Images/Games/RiptideRescue/1.png" alt="Riptide Rescue Screenshot 1" />
+            <img src="../Images/Project_Images/Games/RiptideRescue/2.png" alt="Riptide Rescue Screenshot 2" />
+            <img src="../Images/Project_Images/Games/RiptideRescue/3.png" alt="Riptide Rescue Screenshot 3" />
+            <img src="../Images/Project_Images/Games/RiptideRescue/4.png" alt="Riptide Rescue Screenshot 4" />
+            <img src="../Images/Project_Images/Games/RiptideRescue/5.png" alt="Riptide Rescue Screenshot 5" />
+            <img src="../Images/Project_Images/Games/RiptideRescue/6.png" alt="Riptide Rescue Screenshot 6" />
+            <img src="../Images/Project_Images/Games/RiptideRescue/7.png" alt="Riptide Rescue Screenshot 7" />
+            <img src="../Images/Project_Images/Games/RiptideRescue/8.png" alt="Riptide Rescue Screenshot 8" />
+            <img src="../Images/Project_Images/Games/RiptideRescue/9.png" alt="Riptide Rescue Screenshot 9" />
+          </div>
+          <button class="next" onclick="nextSlide('carousel13')">&#10095;</button>
+        </div>
+      </div>
+    </div>
+      
+
+
+
+
+<!-- Modal for Chess Moves Calculator -->
+<div id="modal4" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal4-title">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <h2 id="modal4-title">Chess Moves Calculator</h2>
+
+    <p>
+      <strong>Chess Moves Calculator</strong> is a Unity-based tool designed to calculate and highlight all legal moves for a selected chess piece, including attackable enemy positions. Developed in March 2024 as a modular OOP-based project using Unity 2020.3.X.
+    </p>
+
+    <!-- Technical Overview -->
+    <h3>🛠️ Project Scope</h3>
+    <ul>
+      <li>Highlights all valid legal moves for any chess piece using helper functions.</li>
+      <li>Uses <code>ChessBoardPlacementHandler.Instance.Highlight()</code> and <code>ClearHighlights()</code>.</li>
+      <li>Red highlight indicates possible enemy captures.</li>
+      <li>Initial positions are customizable via Unity Inspector for test cases.</li>
+      <li>Focus on OOP, clean code structure, and maintainable logic.</li>
+    </ul>
+
+
+    <!-- Embedded YouTube Video -->
+    <h3>🎥 Demo Video</h3>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/24rrALLwPk8" frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+
+    </div>
+</div>
+
+<!-- Modal for Basketball Mechanics 2D -->
+<div id="modal6" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal6')">&times;</span>
+    <h2>Basketball Mechanics 2D</h2>
+    <p>A lightweight 2D prototype to explore basketball throwing logic in a basic environment. Released early 2024.</p>
+
+    
+        <!-- Social Links Section -->
+        <div class="social-links">
+          <h3>Check Out the Project</h3>
+          </a>
+        </div>
+
+
+    <!-- Embedded YouTube Video -->
+    <h3>🎥 Video Preview</h3>
+    <div class="video-container" style="display: flex; justify-content: center; margin-top: 1rem;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wZxU0N6qv80" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for Basketball Mechanics 3D -->
+<div id="modal7" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal7')">&times;</span>
+    <h2>Basketball Mechanics 3D</h2>
+    <p>Swipe to shoot! A 3D arcade basketball game built in Unity with smooth ball-throwing physics and scoring system. Released March 2024.</p>
+
+    <!-- Features -->
+    <h3>🎮 Features</h3>
+    <ul>
+      <li>Swipe mechanics for ball throwing</li>
+      <li>Timer-based game loop with score tracking</li>
+      <li>UI controls: Start and Stop buttons</li>
+      <li>Score display with feedback using TextMeshPro</li>
+      <li>Functional in Unity 2021.3 LTS+</li>
+    </ul>
+
+    <!-- Scripts -->
+    <h3>💻 Core Scripts</h3>
+    <ul>
+      <li><strong>BallThrower.cs:</strong> Handles swipe detection and throw physics</li>
+      <li><strong>HoopScorer.cs:</strong> Manages scoring and ball resets</li>
+    </ul>
+    
+        <!-- Social Links Section -->
+        <div class="social-links">
+          <h3>Check Out the Project</h3>
+          <a href="https://github.com/vishwajeetfate/Unity-Game-Assignment-Basketball-Shooting-Game" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+    <!-- Embedded YouTube Video -->
+    <h3>🎥 Gameplay Preview</h3>
+    <div class="video-container" style="display: flex; justify-content: center; margin-top: 1rem;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6GbY9LufGYQ" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for Gravity Manipulation -->
+<div id="modal11" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal11')">&times;</span>
+    <h2>Gravity Manipulation Puzzle Game</h2>
+    <p>Collect all cubes in a zero-gravity world using clever physics and spatial logic. Released in April 2024.</p>
+
+    <!-- Project Overview -->
+    <h3>🧩 Project Overview</h3>
+    <p>
+      This Unity-based 3D puzzle game challenges players to solve spatial challenges by altering the direction of gravity. Players navigate a character in a third-person view, collect all floating cubes, and avoid falling to complete the level before the timer runs out. Inspired by modern gravity-based puzzle mechanics, this game demonstrates core Unity systems like Rigidbody physics, animations, gravity control, and game state management.
+    </p>
+
+    <!-- Features -->
+    <h3>🎮 Key Features</h3>
+    <ul>
+      <li><strong>Character Movement:</strong> WASD for movement, Space for jump</li>
+      <li><strong>Gravity Manipulation:</strong> Use arrow keys to preview direction, Enter to apply</li>
+      <li><strong>Cube Collection:</strong> Collect all floating cubes within a 2-minute timer</li>
+      <li><strong>Game Over:</strong> Triggered by time-out or falling off playable surfaces</li>
+      <li><strong>Third-Person Camera:</strong> Smooth tracking and orientation using Cinemachine</li>
+      <li><strong>Clean Codebase:</strong> Modular, documented scripts using OOP and design patterns</li>
+    </ul>
+
+    
+        <!-- Social Links Section -->
+        <div class="social-links">
+          <h3>Check Out the Project</h3>
+          <a href="https://github.com/vishwajeetfate/VishwajeetFate_30March2025_UnityTest" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+    <!-- Embedded YouTube Video - Centered -->
+    <h3>🎥 Gameplay Preview</h3>
+    <div class="video-container" style="display: flex; justify-content: center; margin-top: 1rem;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dGi6vzMbGDk" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+
+    </div>
+
+</div>
+
+
+          
+
+  <footer>
+    <p>&copy; 2025 Vishwajeet K. Fate</p>
+  </footer>
+
+
+
+  <script>
+    // Function to open the modal
+    function openModal(id) {
+      // Hide all modals first
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        modal.style.display = 'none';  // Hide all modals
+      });
+  
+      // Show the selected modal
+      const selectedModal = document.getElementById(id);
+      if (selectedModal) {
+        selectedModal.style.display = 'block';  // Display the selected modal
+      }
+    }
+  
+    // Function to close the modal (added for completeness)
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.style.display = 'none';  // Hide the modal
+      }
+    }
+  </script>
+  
+  <script>
+    const slidePositions = {};
+
+    function nextSlide(id) {
+      const track = document.getElementById(id);
+      const slides = track.querySelectorAll('img');
+      slidePositions[id] = (slidePositions[id] || 0) + 1;
+      if (slidePositions[id] >= slides.length) slidePositions[id] = 0;
+      track.style.transform = `translateX(-${slidePositions[id] * 100}%)`;
+    }
+
+    function prevSlide(id) {
+      const track = document.getElementById(id);
+      const slides = track.querySelectorAll('img');
+      slidePositions[id] = (slidePositions[id] || 0) - 1;
+      if (slidePositions[id] < 0) slidePositions[id] = slides.length - 1;
+      track.style.transform = `translateX(-${slidePositions[id] * 100}%)`;
+    }
+  </script>
+  
+</body>
+</html>

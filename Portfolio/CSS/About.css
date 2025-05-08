@@ -1,0 +1,138 @@
+.about-section {
+    position: relative;
+    padding: 4rem 2rem;
+    background-color: #000000;
+    color: #F8EEDF;
+    text-align: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* ==== Galaxy Stars Background ==== */
+.about-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 0;  
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+
+/* ======= GALAXY STARS BACKGROUND ======= */
+#stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none; /* so clicks go through */
+  }
+
+/* Soft Nebula Glow (Static) */
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.1) 0%, transparent 30%),
+        radial-gradient(circle at 80% 50%, rgba(232, 201, 153, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 50% 70%, rgba(142, 22, 22, 0.2) 0%, transparent 30%);
+    background-size: cover;
+    z-index: 0;  /* Keep it behind the content */
+    opacity: 0.5;
+}
+
+/* ==== About Content Section Layout ==== */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem; /* Space between image and text */
+    position: relative;
+    z-index: 2;  /* Keep content on top */
+}
+
+
+.about-profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #E8C999;
+    box-shadow: 0 0 40px rgba(232, 201, 153, 0.3);
+    transform: rotate(-15deg);
+    transition: all 0.4s ease;
+    z-index: 1;  /* Ensure the profile picture is above the galaxy background */
+}
+
+.about-profile-pic:hover {
+    transform: scale(1.2) rotate(-30deg);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    z-index: 1;  /* Keep text above the galaxy effect */
+}
+
+.about-text h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    color: #8E1616;
+}
+
+.about-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #E8C999;
+}
+
+.about-text p {
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* New: Flexbox for Side-by-Side Text Blocks */
+.about-text-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* ==== Responsive Design ==== */
+@media (max-width: 768px) {
+    .about-container {
+        gap: 2rem; /* Reduced gap for smaller screens */
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .about-profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-text-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .about-text-block {
+        flex: none; /* Allow blocks to take full width on small screens */
+        width: 100%;
+    }
+}

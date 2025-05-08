@@ -1,0 +1,157 @@
+/* ==== Categories Section ==== */
+#categories {
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 2rem;
+
+  color: #F8EEDF;
+  z-index: 0;
+}
+
+/* Star Field Layer with Twinkling Animation */
+#categories::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: 100px 100px, 150px 150px, 200px 200px;
+  background-position: 0 0, 50px 50px, 25px 75px;
+  opacity: 0.06;
+  animation: twinkle 6s infinite ease-in-out;
+  z-index: 0;
+}
+
+/* Dark overlay with subtle blur */
+#categories::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.904);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+/* Twinkle animation for stars */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.05; }
+  50% { opacity: 0.1; }
+}
+
+/* Wrapper inside categories for layering */
+.categories-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  color: #E8C999;
+  position: relative;
+}
+
+/* Categories Container */
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+}
+
+/* Individual Category Box */
+.category {
+  background-color: rgba(53, 53, 53, 0.082);
+  padding: 2rem;
+  border-radius: 15px;
+  width: calc(34% - 1rem);
+  min-width: 10px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.171);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(5px);
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+/* Category Icon */
+.category-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #F8EEDF;
+  transition: color 0.4s ease;
+}
+
+.category-icon i {
+  font-size: 3rem;
+}
+
+/* Link inside the Category */
+.category a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Title inside Category */
+.category h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #833838;
+  transition: color 0.4s ease;
+}
+
+/* Description inside Category */
+.category p {
+  font-size: 1rem;
+  color: #B0B0B0;
+  transition: color 0.4s ease;
+  line-height: 1.5;
+}
+
+/* Hover Effects */
+.category:hover h3 {
+  color: #F8EEDF;
+}
+
+.category:hover p {
+  color: #E8C999;
+}
+
+.category:hover .category-icon {
+  color: #F8EEDF;
+}
+
+.category:hover{
+  background-image: url("../Images/Back/1.png");
+  background-size: cover;
+  transform: scale(1.1);
+}
+
+
+/* ==== Responsive Design ==== */
+@media (max-width: 768px) {
+  .category {
+    width: calc(50% - 1rem);
+    min-width: 280px;
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .category {
+    padding: 1.2rem;
+    width: 100%;
+  }
+}
