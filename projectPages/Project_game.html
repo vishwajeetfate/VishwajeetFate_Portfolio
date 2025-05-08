@@ -645,161 +645,154 @@
       </div>
     </div>
       
+    <!-- Modal for Chess Moves Calculator -->
+    <div id="modal4" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal4-title">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <h2 id="modal4-title">Chess Moves Calculator</h2>
+
+        <p>
+          <strong>Chess Moves Calculator</strong> is a Unity-based tool designed to calculate and highlight all legal moves for a selected chess piece, including attackable enemy positions. Developed in March 2024 as a modular OOP-based project using Unity 2020.3.X.
+        </p>
+
+        <!-- Technical Overview -->
+        <h3>🛠️ Project Scope</h3>
+        <ul>
+          <li>Highlights all valid legal moves for any chess piece using helper functions.</li>
+          <li>Uses <code>ChessBoardPlacementHandler.Instance.Highlight()</code> and <code>ClearHighlights()</code>.</li>
+          <li>Red highlight indicates possible enemy captures.</li>
+          <li>Initial positions are customizable via Unity Inspector for test cases.</li>
+          <li>Focus on OOP, clean code structure, and maintainable logic.</li>
+        </ul>
 
 
-
-
-<!-- Modal for Chess Moves Calculator -->
-<div id="modal4" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal4-title">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal4')">&times;</span>
-    <h2 id="modal4-title">Chess Moves Calculator</h2>
-
-    <p>
-      <strong>Chess Moves Calculator</strong> is a Unity-based tool designed to calculate and highlight all legal moves for a selected chess piece, including attackable enemy positions. Developed in March 2024 as a modular OOP-based project using Unity 2020.3.X.
-    </p>
-
-    <!-- Technical Overview -->
-    <h3>🛠️ Project Scope</h3>
-    <ul>
-      <li>Highlights all valid legal moves for any chess piece using helper functions.</li>
-      <li>Uses <code>ChessBoardPlacementHandler.Instance.Highlight()</code> and <code>ClearHighlights()</code>.</li>
-      <li>Red highlight indicates possible enemy captures.</li>
-      <li>Initial positions are customizable via Unity Inspector for test cases.</li>
-      <li>Focus on OOP, clean code structure, and maintainable logic.</li>
-    </ul>
-
-
-    <!-- Embedded YouTube Video -->
-    <h3>🎥 Demo Video</h3>
-    <div class="video-wrapper">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/24rrALLwPk8" frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
-    </div>
-
-    </div>
-</div>
-
-<!-- Modal for Basketball Mechanics 2D -->
-<div id="modal6" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal6')">&times;</span>
-    <h2>Basketball Mechanics 2D</h2>
-    <p>A lightweight 2D prototype to explore basketball throwing logic in a basic environment. Released early 2024.</p>
-
-    
-        <!-- Social Links Section -->
-        <div class="social-links">
-          <h3>Check Out the Project</h3>
-          </a>
+        <!-- Embedded YouTube Video -->
+        <h3>🎥 Demo Video</h3>
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/24rrALLwPk8" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
         </div>
 
-
-    <!-- Embedded YouTube Video -->
-    <h3>🎥 Video Preview</h3>
-    <div class="video-container" style="display: flex; justify-content: center; margin-top: 1rem;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/wZxU0N6qv80" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
+        </div>
     </div>
-  </div>
-</div>
+
+    <!-- Modal for Basketball Mechanics 2D -->
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <h2>Basketball Mechanics 2D</h2>
+        <p>A lightweight 2D prototype to explore basketball throwing logic in a basic environment. Released early 2024.</p>
+
+        
+            <!-- Social Links Section -->
+            <div class="social-links">
+              <h3>Check Out the Project</h3>
+              </a>
+            </div>
 
 
-<!-- Modal for Basketball Mechanics 3D -->
-<div id="modal7" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal7')">&times;</span>
-    <h2>Basketball Mechanics 3D</h2>
-    <p>Swipe to shoot! A 3D arcade basketball game built in Unity with smooth ball-throwing physics and scoring system. Released March 2024.</p>
+        <!-- Embedded YouTube Video -->
+        <h3>🎥 Video Preview</h3>
+        <div class="video-container" style="display: flex; justify-content: center; margin-top: 1rem;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/wZxU0N6qv80" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
 
-    <!-- Features -->
-    <h3>🎮 Features</h3>
-    <ul>
-      <li>Swipe mechanics for ball throwing</li>
-      <li>Timer-based game loop with score tracking</li>
-      <li>UI controls: Start and Stop buttons</li>
-      <li>Score display with feedback using TextMeshPro</li>
-      <li>Functional in Unity 2021.3 LTS+</li>
-    </ul>
+    <!-- Modal for Basketball Mechanics 3D -->
+    <div id="modal7" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal7')">&times;</span>
+        <h2>Basketball Mechanics 3D</h2>
+        <p>Swipe to shoot! A 3D arcade basketball game built in Unity with smooth ball-throwing physics and scoring system. Released March 2024.</p>
 
-    <!-- Scripts -->
-    <h3>💻 Core Scripts</h3>
-    <ul>
-      <li><strong>BallThrower.cs:</strong> Handles swipe detection and throw physics</li>
-      <li><strong>HoopScorer.cs:</strong> Manages scoring and ball resets</li>
-    </ul>
-    
-        <!-- Social Links Section -->
-        <div class="social-links">
-          <h3>Check Out the Project</h3>
-          <a href="https://github.com/vishwajeetfate/Unity-Game-Assignment-Basketball-Shooting-Game" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
+        <!-- Features -->
+        <h3>🎮 Features</h3>
+        <ul>
+          <li>Swipe mechanics for ball throwing</li>
+          <li>Timer-based game loop with score tracking</li>
+          <li>UI controls: Start and Stop buttons</li>
+          <li>Score display with feedback using TextMeshPro</li>
+          <li>Functional in Unity 2021.3 LTS+</li>
+        </ul>
+
+        <!-- Scripts -->
+        <h3>💻 Core Scripts</h3>
+        <ul>
+          <li><strong>BallThrower.cs:</strong> Handles swipe detection and throw physics</li>
+          <li><strong>HoopScorer.cs:</strong> Manages scoring and ball resets</li>
+        </ul>
+        
+            <!-- Social Links Section -->
+            <div class="social-links">
+              <h3>Check Out the Project</h3>
+              <a href="https://github.com/vishwajeetfate/Unity-Game-Assignment-Basketball-Shooting-Game" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+
+        <!-- Embedded YouTube Video -->
+        <h3>🎥 Gameplay Preview</h3>
+        <div class="video-container" style="display: flex; justify-content: center; margin-top: 1rem;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6GbY9LufGYQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Gravity Manipulation -->
+    <div id="modal11" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal11')">&times;</span>
+        <h2>Gravity Manipulation Puzzle Game</h2>
+        <p>Collect all cubes in a zero-gravity world using clever physics and spatial logic. Released in April 2024.</p>
+
+        <!-- Project Overview -->
+        <h3>🧩 Project Overview</h3>
+        <p>
+          This Unity-based 3D puzzle game challenges players to solve spatial challenges by altering the direction of gravity. Players navigate a character in a third-person view, collect all floating cubes, and avoid falling to complete the level before the timer runs out. Inspired by modern gravity-based puzzle mechanics, this game demonstrates core Unity systems like Rigidbody physics, animations, gravity control, and game state management.
+        </p>
+
+        <!-- Features -->
+        <h3>🎮 Key Features</h3>
+        <ul>
+          <li><strong>Character Movement:</strong> WASD for movement, Space for jump</li>
+          <li><strong>Gravity Manipulation:</strong> Use arrow keys to preview direction, Enter to apply</li>
+          <li><strong>Cube Collection:</strong> Collect all floating cubes within a 2-minute timer</li>
+          <li><strong>Game Over:</strong> Triggered by time-out or falling off playable surfaces</li>
+          <li><strong>Third-Person Camera:</strong> Smooth tracking and orientation using Cinemachine</li>
+          <li><strong>Clean Codebase:</strong> Modular, documented scripts using OOP and design patterns</li>
+        </ul>
+
+        
+            <!-- Social Links Section -->
+            <div class="social-links">
+              <h3>Check Out the Project</h3>
+              <a href="https://github.com/vishwajeetfate/VishwajeetFate_30March2025_UnityTest" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+
+        <!-- Embedded YouTube Video - Centered -->
+        <h3>🎥 Gameplay Preview</h3>
+        <div class="video-container" style="display: flex; justify-content: center; margin-top: 1rem;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dGi6vzMbGDk" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+
         </div>
 
-    <!-- Embedded YouTube Video -->
-    <h3>🎥 Gameplay Preview</h3>
-    <div class="video-container" style="display: flex; justify-content: center; margin-top: 1rem;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/6GbY9LufGYQ" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
-
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal for Gravity Manipulation -->
-<div id="modal11" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal11')">&times;</span>
-    <h2>Gravity Manipulation Puzzle Game</h2>
-    <p>Collect all cubes in a zero-gravity world using clever physics and spatial logic. Released in April 2024.</p>
-
-    <!-- Project Overview -->
-    <h3>🧩 Project Overview</h3>
-    <p>
-      This Unity-based 3D puzzle game challenges players to solve spatial challenges by altering the direction of gravity. Players navigate a character in a third-person view, collect all floating cubes, and avoid falling to complete the level before the timer runs out. Inspired by modern gravity-based puzzle mechanics, this game demonstrates core Unity systems like Rigidbody physics, animations, gravity control, and game state management.
-    </p>
-
-    <!-- Features -->
-    <h3>🎮 Key Features</h3>
-    <ul>
-      <li><strong>Character Movement:</strong> WASD for movement, Space for jump</li>
-      <li><strong>Gravity Manipulation:</strong> Use arrow keys to preview direction, Enter to apply</li>
-      <li><strong>Cube Collection:</strong> Collect all floating cubes within a 2-minute timer</li>
-      <li><strong>Game Over:</strong> Triggered by time-out or falling off playable surfaces</li>
-      <li><strong>Third-Person Camera:</strong> Smooth tracking and orientation using Cinemachine</li>
-      <li><strong>Clean Codebase:</strong> Modular, documented scripts using OOP and design patterns</li>
-    </ul>
-
-    
-        <!-- Social Links Section -->
-        <div class="social-links">
-          <h3>Check Out the Project</h3>
-          <a href="https://github.com/vishwajeetfate/VishwajeetFate_30March2025_UnityTest" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-
-    <!-- Embedded YouTube Video - Centered -->
-    <h3>🎥 Gameplay Preview</h3>
-    <div class="video-container" style="display: flex; justify-content: center; margin-top: 1rem;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dGi6vzMbGDk" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
-
     </div>
 
-</div>
 
-
-          
 
   <footer>
-    <p>&copy; 2025 Vishwajeet K. Fate</p>
+    <p>&copy; 2025 Vishwajeet K. Fate. Made with ❤️</p>
   </footer>
 
 

@@ -17,6 +17,7 @@ header {
   z-index: 10;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: background 0.3s ease;
+  
 }
 
 .header-container {
@@ -399,4 +400,111 @@ footer {
 
 H3{
   color: #721212;
+}
+
+
+
+
+
+
+
+/* ------------------------- */
+/*        RESPONSIVENESS     */
+/* ------------------------- */
+
+@media (max-width: 1124px) {
+  .projects {
+    padding: 80px 40px;
+  }
+
+  .project-item {
+    width: 45%;
+  }
+
+  .carousel {
+    width: 90%;
+  }
+}
+
+@media (max-width: 728px) {
+  header {
+    padding: 10px 15px;
+    flex-direction: column;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .back-btn {
+    position: static;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .glitch {
+    font-size: 2rem;
+  }
+
+  .projects {
+    padding: 60px 20px;
+  }
+
+  .project-item {
+    width: 100%;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .close {
+    right: 5%;
+    font-size: 24px;
+  }
+
+  .carousel button {
+    font-size: 1.5rem;
+    padding: 0.2em 0.4em;
+  }
+
+  .social-links a {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .glitch {
+    font-size: 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .project-item {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+
+  .video-full iframe {
+    height: 200px;
+  }
+
+  .carousel {
+    width: 100%;
+  }
 }

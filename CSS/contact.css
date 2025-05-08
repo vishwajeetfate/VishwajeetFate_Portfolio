@@ -138,8 +138,9 @@
   100% { transform: scale(1.3) rotate(12deg); }
 }
 
-/* ======= TYPEWRITER PLACEHOLDER (optional future animation) ======= */
-/* You can define a typewriter animation here if needed */
+.typewriter1{
+  text-align: center;
+}
 
 /* ======= RESPONSIVE DESIGN ======= */
 @media (max-width: 1060px) {

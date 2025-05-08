@@ -12,7 +12,8 @@ html, body {
   position: relative;
   overflow: hidden;
   padding: 150px 2rem 80px 2rem;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   z-index: 0;
   background-color: #1a1a1a;
 }
@@ -22,11 +23,15 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   z-index: 0;
   pointer-events: none;
+  display: block;
 }
+
 
 /* ======= CRAZY BLOBS BACKGROUND ======= */
 .crazy-blobs {
@@ -108,6 +113,7 @@ html, body {
   max-width: 200px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .hero-buttons a {
@@ -248,7 +254,9 @@ html, body {
   box-shadow: 0 0 15px rgba(255, 0, 76, 0.7);
 }
 
-/* ======= RESPONSIVE DESIGN ======= */
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
 @media (max-width: 1060px) {
   .hero-content {
     flex-direction: column;
@@ -256,17 +264,23 @@ html, body {
     gap: 2rem;
   }
 
-  .hero-image img {
-    max-width: 300px;
+  .hero-content p,
+  .typewriter,
+  .glitch h2 {
+    text-align: start;
   }
 
-  .social-links-hero {
-    justify-content: center;
+  .hero-image img {
+    max-width: 300px;
   }
 
   .hero-buttons {
     flex-direction: column;
     align-items: center;
+  }
+
+  .social-links-hero {
+    justify-content: center;
   }
 }
 
@@ -279,12 +293,19 @@ html, body {
     text-align: center;
   }
 
+  .hero-content p,
+  .typewriter,
+  .glitch h2 {
+    text-align: start;
+  }
+
   .hero-image img {
     max-width: 150px;
   }
 
-  .glitch {
-    text-align: center;
+  .glitch::before,
+  .glitch::after {
+    display: none;
   }
 
   .typewriter {
@@ -292,7 +313,7 @@ html, body {
     max-width: 100%;
     white-space: normal;
     overflow: visible;
-    animation: none; /* Disable typing animation on mobile */
+    animation: none;
   }
 
   .typewriter span {
@@ -301,9 +322,9 @@ html, body {
     animation: none;
   }
 
-  .hero-btn {
-    width: 70%;
-    text-align: center;
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
   }
 
   .social-links-hero {
@@ -316,6 +337,6 @@ html, body {
     height: 40px;
     font-size: 1rem;
     padding: 0.5rem;
+    margin-top: 10px;
   }
 }
-
