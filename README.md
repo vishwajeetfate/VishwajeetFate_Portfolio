@@ -2,7 +2,7 @@
 
 Hi! I'm **Vishwajeet Fate**, a passionate and detail-oriented **Game Designer** with a strong focus on game mechanics, level design, and narrative structure. I specialize in creating immersive experiences and player-centric gameplay using Unity (2D/3D), C# scripting, and various game development tools.
 
-🎓 Currently pursuing a **B.Tech in Gaming Technology**, I'm constantly learning and experimenting with new game design and development techniques.
+I'm constantly learning and experimenting with new game design and development techniques.
 
 ---
 
